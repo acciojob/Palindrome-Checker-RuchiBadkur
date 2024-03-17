@@ -2,9 +2,9 @@
 
 function palindrome(str){
 	let newStr = "";
-	newStr = str.split("").filter(char => char !== " ").join("");
+	newStr = str.toLowercase().split("").filter(char => char !== " ").join("");
 	
-	return newStr === str.split("").reverse().join("");
+	return newStr === str.toLowercase().split("").reverse().join("");
 	
 }
 module.exports = palindrome
